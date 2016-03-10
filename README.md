@@ -3,6 +3,10 @@ AIDL-transfer-Byte-example
 本例子利用`AIDL`实现了进程间图片的传输。基本流程是：client端发送请求，server端下载byte类型的数据并通过接口函数回传。
 由于底层是通过传输byte实现的，因此该例子还可以扩展为传输其他可与byte互相转换的复杂类型。由于Server与Client端之间仅靠`.aidl`文件进行通信，因此Server端如何进行下载对Client端没有影响。`AIDL`即体现出了`interface`的作用。
 
+###环境
+Mac OS X  
+Android Studio 1.5
+
 ###基本原理
 
 1. 整个工程含两个module，一个是client端（即app），另一个是server端。
